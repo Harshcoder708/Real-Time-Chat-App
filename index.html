@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenMind Chat - Discord Style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div id="app">
+        <aside class="sidebar">
+            <div class="logo">OpenMind</div>
+            <div class="channels" id="channels"></div>
+            <div class="user-section">
+                <div class="avatar" id="sidebarAvatar">?</div>
+                <span class="username" id="sidebarUsername"></span>
+            </div>
+        </aside>
+        <main class="main">
+            <div class="header" id="channelHeader">Welcome</div>
+            <div id="messages"></div>
+            <div id="input-area">
+                <input type="text" id="message" placeholder="Message #general" autocomplete="off" />
+                <button id="sendBtn">Send</button>
+            </div>
+        </main>
+    </div>
+    <div class="join-modal" id="joinModal">
+        <div class="modal-content">
+            <h2>Join the Chat</h2>
+            <input type="text" id="usernameInput" placeholder="Your username" autocapitalize="off" maxlength="18" />
+            <input type="text" id="roomInput" placeholder="Channel (e.g. general, tech)" autocapitalize="off" maxlength="24" />
+            <button id="joinBtn">Join</button>
+        </div>
+    </div>
+     <script src="app.js"></script> 
+</body>
+</html>
